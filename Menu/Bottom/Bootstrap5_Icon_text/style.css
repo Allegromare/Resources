@@ -1,0 +1,159 @@
+.bottom-nav {
+  position: fixed;
+  left: 5rem;
+  width: 70%;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+  z-index: 99999;
+  bottom: 2rem;
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-nav:before {
+  content: "";
+  position: absolute;
+  height: 360px;
+  width: 100%;
+  top: 32px;
+  z-index: 10;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 60%);
+  border-radius: 50%;
+  transform: translateY(-50%) scalex(1.4) scaleY(0.12);
+  opacity: .18
+}
+
+.bottom-nav ul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 64px
+}
+
+.bottom-nav ul li {
+  list-style-type: none;
+  margin: 8px;
+  text-align: center
+}
+
+.bottom-nav a {
+  display: block;
+  color: hsl(210, 33%, 28%);
+  text-decoration: none
+}
+
+.bottom-nav a .icon {
+  fill: hsl(210, 17%, 44%)
+}
+
+.bottom-nav a.active {
+  color: #06c
+}
+
+.bottom-nav a.active .icon {
+  fill: #06c
+}
+
+.bottom-nav a:hover {
+  text-decoration: none;
+  color: #06c
+}
+
+.bottom-nav a:hover .icon {
+  fill: #06c
+}
+
+.bottom-nav .it-ico {
+  position: relative;
+  font-size: 1.35rem;
+  display: block;
+  height: 32px
+}
+
+.bottom-nav .it-ico:before {
+  margin-right: 0
+}
+
+.bottom-nav .badge-wrapper {
+  position: relative
+}
+
+.bottom-nav .bottom-nav-badge,
+.bottom-nav .bottom-nav-alert {
+  display: block;
+  position: absolute;
+  background-color: #06c;
+  border: 1px solid #fff
+}
+
+.bottom-nav .bottom-nav-badge {
+  top: 0;
+  right: 0;
+  min-width: 1.15rem;
+  line-height: 1;
+  padding: 4px 6px;
+  color: #fff;
+  font-size: .625rem;
+  border-radius: 2rem;
+  font-style: normal
+}
+
+.bottom-nav .bottom-nav-alert {
+  top: 0;
+  right: 4px;
+  min-width: 12px;
+  height: 12px;
+  border-radius: 50%
+}
+
+.bottom-nav .bottom-nav-label {
+  margin-top: 6px;
+  font-size: .625rem;
+  line-height: 1;
+  display: block;
+  font-weight: 600
+}
+
+
+
+.menu {
+  position: fixed;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+  z-index: 99999;
+  pointer-events: none;
+  bottom: 1rem;
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-row {
+  position: relative;
+  flex-direction: column;
+  min-width: 0;
+  padding: .25rem;
+  border-radius: .9rem;
+  background: rgba(33, 37, 41, 0.9) !important;
+  pointer-events: auto;
+  transition: all .5s;
+}
